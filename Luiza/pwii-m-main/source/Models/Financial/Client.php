@@ -1,4 +1,5 @@
 <?php
+namespace Source\Models\Financial\Saving;
 namespace Source\Models\Financial;
 
 use Source\Models\User;
@@ -14,7 +15,7 @@ class Client extends User {
         }
 
         public function addSaving (Saving $saving){
-            $this->saving[] = $saving
+            $this->saving[] = $saving;
          var_dump($this->saving);
         }
 }
